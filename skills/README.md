@@ -5,7 +5,6 @@ Este directorio contiene los scripts necesarios para configurar los skills de IA
 ## 📁 Archivos
 
 - **`setup.sh`**: Script principal de configuración
-- **`setup_test.sh`**: Suite de pruebas unitarias
 - **`skills/*/SKILL.md`**: Archivos de documentación de cada skill
 
 ## 🚀 Uso Rápido
@@ -24,6 +23,9 @@ Este directorio contiene los scripts necesarios para configurar los skills de IA
 
 # Configurar múltiples asistentes
 ./skills/setup.sh --claude --copilot --gemini
+
+# Con powershell
+wsl bash skills/setup.sh
 ```
 
 ### Opciones Disponibles
@@ -165,7 +167,6 @@ find skills/ -name "SKILL.md"
 
 ```bash
 chmod +x skills/setup.sh
-chmod +x skills/setup_test.sh
 ```
 
 ### Backup de configuración anterior
